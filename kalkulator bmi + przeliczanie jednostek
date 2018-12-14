@@ -1,0 +1,23 @@
+########## Kalkulator BMI##############
+print("Podaj wzrost w cm: \n")
+wzrots=input(int)
+print("Podaj wage w kg: \n")
+waga=input(int)
+bmi=waga/wzrost*2
+print("Twoje BMI wynosi:", bmi)
+
+#################### Kalkulator cm /m ; cm/cal ##############
+
+cm = int(input("Podaj długość w cm: "))
+cm_to_m = cm/100
+cm_to_cal = cm/0.394
+
+print("Długość {} cm to {} metrów lub {:.3f} cali".format(cm, cm_to_m, cm_to_cal))
+
+# Ad. B
+
+kg = int(input("Podaj wagę w kg: "))
+kg_to_g = kg * 1000
+kg_to_funt = kg * 2.4419
+
+print("Waga {}kg to {}g lub {:.4f} funty".format(kg, kg_to_g,kg_to_funt))
