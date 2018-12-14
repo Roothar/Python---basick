@@ -1,0 +1,6 @@
+####Program obliczy wartosc lokaty po X latach ###i
+start=float(input("Podaj ilosc pieniedzy przeznaczonych na lokate: "))
+procent=float(input("Podaj oprocentowanie w skali roku: "))
+lata=int(input("Podaj liczbe lat przez ktore lokata bedzie aktywna: "))
+end=start*(1+procent*lata)
+print("Po {} latach otrzymasz {:.2f} zł z lokaty" .format(lata, end))
