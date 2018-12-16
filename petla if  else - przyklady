@@ -1,3 +1,4 @@
+###############################
 is_male = True
 is_tall = False
 
@@ -20,7 +21,7 @@ elif not is_male and is_tall:
 else:
     print('You neither not male and not tall')
 
-################
+########################################
 
 # porownanie 3 liczb przy uzyciu if / elif
 
@@ -48,3 +49,13 @@ else:
 
 ##########################################
 
+##### Zgadnij losowa liczbe z zakresu 1-10
+import random
+
+liczba = random.randint(1, 10)
+zgadnij=input("jaka liczbe mam na mysli? - zakres 1-10\n")
+print("Podales liczbe:", zgadnij)
+if  liczba==int(zgadnij):
+    print("Zgadles ! Brawo !")
+else  :
+    print("Niestety Ci sie nie udalo; wylosowana przez system liczba to:", liczba)
