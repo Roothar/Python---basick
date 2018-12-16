@@ -1,0 +1,50 @@
+is_male = True
+is_tall = False
+
+if is_male or is_tall:
+    print("You are a male or tall ")
+else:
+    print('You neither male and tall')
+
+###############################
+
+is_male = False
+is_tall = True
+
+if is_male and is_tall:
+    print("You are a male or tall ")
+elif is_male and not is_tall:
+    print('You are short male')
+elif not is_male and is_tall:
+    print("You are not male, but you are tall")
+else:
+    print('You neither not male and not tall')
+
+################
+
+# porownanie 3 liczb przy uzyciu if / elif
+
+
+def max_num(num1, num2, num3):
+
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+
+print("Najwieksza liczba z 3 podanych to:", max_num(13, 64, 6))
+
+######################################
+
+
+is_male = input("Wpisz m jesli jestes mezczyzna lub k jesli jestes kobieta: ")
+if is_male == "m":
+    print('Jestes mezczyzna')
+else:
+    print('Nie jestes mezczyzna :D')
+
+##########################################
+
