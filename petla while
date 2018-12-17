@@ -34,14 +34,15 @@ brak_prob = False
 
 while sekret != zgadnij and not (brak_prob):
 
-    if liczba_prob < max_prob :
+    if liczba_prob < max_prob:
 
         zgadnij = input("Podaj sekretne slowo: ")
         print('Niestety', zgadnij, 'nie jest odpowiednim slowem')
         liczba_prob += 1
     else:
         brak_prob = True
-if  brak_prob:
-    print("Przegrales")
+
+if brak_prob:
+   print("Przegrales, slowem bylo:", sekret)
 else:
-    print('Gratulacje, sekretne slowo to: ', zgadnij)
+   print('Gratulacje, sekretne slowo to: ', sekret)
