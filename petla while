@@ -1,0 +1,36 @@
+i = 0
+print("Test dzialania petli - wypisze cyfry od 0 do 10:")
+while i <= 10:
+    print(i)
+    i = i+1
+print("koniec tej czesci")
+
+print("Tutaj wczesniej wykonamy operacje a potem wyswietlimy:")
+k = 0
+while k < 10:
+    k = k+1
+    print(k)
+
+print("####################-INNY PROGRAM-#####################")
+
+print("Program sumuje liczby - gdy wartosc przekroczy 150 zakonczy dzialanie")
+suma = 0
+while suma < 150:
+    print("Wpisz liczbe a program zsumuje z poprzednimi:")
+    x = input()
+    suma += int(x)
+    print("Wynik to:", suma)
+else:
+    print("Koniec zabawy, suma przekroczyla 150")
+
+
+##########
+
+sekret = input("Podaj sekretne slowo /zagadke dla gracza: ")
+zgadnij = ""
+
+while sekret !=zgadnij:
+    zgadnij = input("Podaj sekretne slowo: ")
+    print('Niestety', zgadnij, 'nie jest odpowiednim slowem')
+else:
+    print('Gratulacje, sekretne slowo to: ', zgadnij)
