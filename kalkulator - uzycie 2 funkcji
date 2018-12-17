@@ -18,8 +18,9 @@ def kalkulator() :
 
     else:
         print("Wybrales zly operator ! ")
+    
+    
     powtorka()
-
 
 
 def powtorka():
