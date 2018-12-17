@@ -1,15 +1,5 @@
 # kalkulator : 2 funkcje dajace mozliwosc nieskonczonego uruchamiania kolejnych dzialan
 
-def powtorka():
-
-    m = str(input("Wcisnij \"k\" jesli chcesz wykonac kolejne dzialanie, jesli nie, wcisnij cos innego : "))
-
-    if m == "k":
-        kalkulator()
-        print("Teraz program zakonczy dzialanie")
-
-    else:
-        print("To koniec programu !")
 
 def kalkulator() :
 
@@ -30,6 +20,24 @@ def kalkulator() :
         print("Wybrales zly operator ! ")
     powtorka()
 
+
+
+def powtorka():
+
+    m = str(input("Wcisnij \"k\" jesli chcesz wykonac kolejne dzialanie, jesli nie, wcisnij cos innego : "))
+
+    if m == "k":
+        kalkulator()
+        print("Teraz program zakonczy dzialanie")
+
+    else:
+        print("To koniec programu !")
+
+###### Uruchomienie programu poprzez wywolanie funkcji kalkulator
+
 print("Program wykona teraz wybrane dzialanie na 2 wybranych przez Ciebie liczbach: ")
 
+
 kalkulator()
+
+
