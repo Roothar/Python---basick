@@ -28,9 +28,20 @@ else:
 
 sekret = input("Podaj sekretne slowo /zagadke dla gracza: ")
 zgadnij = ""
+liczba_prob = 0
+max_prob = 3
+brak_prob = False
 
-while sekret !=zgadnij:
-    zgadnij = input("Podaj sekretne slowo: ")
-    print('Niestety', zgadnij, 'nie jest odpowiednim slowem')
+while sekret != zgadnij and not (brak_prob):
+
+    if liczba_prob < max_prob :
+
+        zgadnij = input("Podaj sekretne slowo: ")
+        print('Niestety', zgadnij, 'nie jest odpowiednim slowem')
+        liczba_prob += 1
+    else:
+        brak_prob = True
+if  brak_prob:
+    print("Przegrales")
 else:
     print('Gratulacje, sekretne slowo to: ', zgadnij)
