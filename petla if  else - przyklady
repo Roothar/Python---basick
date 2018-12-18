@@ -25,18 +25,20 @@ else:
 
 # porownanie 3 liczb przy uzyciu if / elif
 
-
 def max_num(num1, num2, num3):
-
+    
     if num1 >= num2 and num1 >= num3:
         return num1
     elif num2 >= num1 and num2 >= num3:
         return num2
     else:
         return num3
+print("Program porowna 3 wprowadzone przez Ciebie cyfry i wskaze najwieksza:")
+num1 = int(input('Podaj 1 cyfre: '))
+num2 = int(input('Podaj 2 cyfre: '))
+num3 = int(input('Podaj 3 cyfre: '))
 
-
-print("Najwieksza liczba z 3 podanych to:", max_num(13, 64, 6))
+print("Najwieksza liczba z 3 podanych to:", max_num(num1, num2, num3))
 
 ######################################
 
