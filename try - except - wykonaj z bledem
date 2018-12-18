@@ -1,0 +1,10 @@
+# Wszystko co jest pomiedzy try a except a jest niewlasciwe bedzie ignorowane i program zwroci
+# invalid input
+#Trzeba uwazac co w takim bloku umieszczamy !
+try:
+    number = int(input('Podaj numer'))
+    print(number)
+    i = 10/0
+
+except:
+    print('Invalid input')
