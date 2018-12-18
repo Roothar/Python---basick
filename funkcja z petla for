@@ -1,0 +1,15 @@
+base_numb = int(input("Podaj liczbe: "))
+power_numb = int(input("Podaj potege: "))
+
+
+
+
+def potega():
+    resoult = 1
+    for index in range (power_numb):
+        resoult = resoult*base_numb
+    print("wynik", base_numb, "do potegi", index+1, "to " , resoult)
+    
+    
+  
+potega()    
