@@ -1,0 +1,27 @@
+#   open('sciezkapliku' , 'r') #tylko odczyt
+#   open('sciezkapliku' , 'w') #zapis - w pliku zostana tylko dane egzekwowane przez program !!!!!
+#   open('sciezkapliku' , 'a') #mozna dodac tylko na koncu pliku
+
+
+employee_file  = open('employess.txt','a')
+#dopisywanie do pliku - UWAGA - jesli uruchomisz program 2razy do pliku wpisze sie
+#podwojnie !!!!!
+employee_file.write('Toby - HRs')
+employee_file.write('\nKelly - Customer Service')
+#sprawdza czy plik mozna odczytac
+print(employee_file.readable())
+
+#   print(employee_file.read())
+
+#   print(employee_file.readline())
+#   print(employee_file.readline())
+
+#czyta linie i wrzuca je do szeregu
+#   print(employee_file.readlines())
+
+for employee in employee_file.readlines():
+    print(employee)
+
+# zamyka plik
+employee_file.close()
+
