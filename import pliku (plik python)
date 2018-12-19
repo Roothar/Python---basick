@@ -1,0 +1,9 @@
+# importowanie pliku (z rozszerzeniem .py) , kktory zawiera dodatkowe funckje, zmienne ; predefiniowane 
+
+
+
+import nazwa_pliku
+
+
+### Moduly mozna znalezc na:
+### docs.python.org/3/py-modindex.html
