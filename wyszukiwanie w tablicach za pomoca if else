@@ -1,0 +1,13 @@
+
+##program wyszkuje w produktach owoce i je wyswietla
+
+produkty = ["kiwi","mleko","potas","pomarańczka","jabłko","lokomotywa","kiwi"]
+owoce = ["kiwi","jabłko", "pomarańczka"]
+licznik=0
+for produkt in produkty:
+    licznik += 1
+    for owoc in owoce:
+        if produkt == owoc:
+            print("Wykryto owoc w produktach na pozycji:",licznik,"Owoc ten to: ", produkt)
+        else:
+            continue
