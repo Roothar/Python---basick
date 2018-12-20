@@ -1,0 +1,19 @@
+
+#definiowanie klasy oraz funkcji w niej
+class Student:
+    
+    def __init__(self, name, major, gpa, is_on_probation):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+        self.is_on_probation = is_on_probation
+        
+        
+## dzieki self.name zastosowanym w funkcji importujemy wlasciwe wartosci dla parametru w programie
+
+############## Improt klasy do oddzielnego pliku
+
+from Student import Student
+
+student1 = Student('Jim', 'Business', 3.1, False)
+student2 = Student('John', 'Application', 4.5, True)
