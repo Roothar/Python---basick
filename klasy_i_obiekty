@@ -11,7 +11,7 @@ class Student:
         
 ## dzieki self.name zastosowanym w funkcji importujemy wlasciwe wartosci dla parametru w programie
 
-############## Improt klasy do oddzielnego pliku
+############## Improt klasy do oddzielnego pliku (1 student to sciezka do pliku, gdzie klasa jest zdefiniowana)
 
 from Student import Student
 
