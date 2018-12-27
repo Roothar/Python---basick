@@ -1,0 +1,14 @@
+#### lambda to mala funkcja usprawniajaca kod w niektorych przypadkach
+
+x = lambda a,b,c : a*b*c
+
+### najczesciej stosowana jest w innej funkcji aby zmodyfikowac / dostosowac jej dzialanie
+
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+
+print(mydoubler(11)) 
+print(mytripler(11))
