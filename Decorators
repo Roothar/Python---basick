@@ -1,0 +1,49 @@
+def hello(name='Jose'):
+    print('The hello() function has been executed !')
+
+    def greet():
+        return '\t This is the Greet() func inside hello() func !'
+
+    def welcome():
+        return '\t this is welcome() inside hello'
+
+    print('Ill return the function:')
+
+    if name == 'Jose':
+        return greet
+    else:
+        return welcome
+
+
+hello()
+
+my_new_func = hello('Jose')
+
+print(my_new_func())
+
+
+# Przyklad wykorzystania dekoratorow (wykonania funkcji w funkcji)
+
+def new_decorator(original_func):
+
+    def wrap_func():
+        print('Some extra code just to execute before original')
+        original_func()
+        print('Some code after original Func !')
+    return wrap_func
+
+def func_need_to_decorate():
+    print('I want decoration !')
+
+
+decorated_func = new_decorator(func_need_to_decorate)
+
+decorated_func()
+
+#ponizej to samo rozwiazanie za pomoca keyword @
+
+@new_decorator
+def func_need_to_decorate2():
+    print('I want decoration 2 !')
+
+func_need_to_decorate2()
